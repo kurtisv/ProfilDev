@@ -1,0 +1,132 @@
+/* ===== LAYOUT GLOBAL ===== */
+.exp-section {
+    display: flex;
+    min-height: 600px;
+    background-color: #ffffff;
+  }
+  
+  .exp-illustration {
+    flex: 0 0 260px;                        /* bande de 260 px à gauche */
+    background: url('../../assets/sage-26_e5a68945.jpg') center/cover no-repeat;
+  }
+  
+  .exp-content {
+    flex: 1;
+    padding: 80px 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  /* ===== TITRES ===== */
+  .exp-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #1d293f;
+    margin-bottom: 40px;
+  }
+  
+  .exp-job {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1d293f;
+    margin: 40px 0 20px;
+  }
+  
+  .exp-job span {
+    font-weight: 400;
+  }
+  
+  /* ===== LISTE FREELANCE ===== */
+  .exp-list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  
+  .exp-item {
+    display: flex;
+    gap: 24px;
+  }
+  
+  .exp-item h4 {
+    font-size: 1.15rem;
+    margin-bottom: 6px;
+    color: #1d293f;
+  }
+  
+  .exp-item p {
+    color: #374151;
+    font-size: 1rem;
+  }
+  
+/* ───────── HEXAGONE COMME SUR LA MAQUETTE ───────── */
+.hexagon {
+    /* dimensions */
+    width: 70px;          /* largeur exacte */
+    height: 82px;         /* hauteur exacte */
+  
+    /* couleur de fond vert sauge très clair */
+    background-color: #d8e8e4;
+  
+    /* bordure légèrement plus foncée pour souligner la forme */
+    border: 1px solid #c9dad7;
+  
+    /* forme hexagonale (pointe en haut & en bas) */
+    clip-path: polygon(
+      50% 0%,    /* pointe haute */
+      100% 25%,  /* coin haut-droit */
+      100% 75%,  /* coin bas-droit */
+      50% 100%,  /* pointe basse */
+      0% 75%,    /* coin bas-gauche */
+      0% 25%     /* coin haut-gauche */
+    );
+  
+    /* centrage de l’icône */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    /* icône bleu nuit */
+    color: #1d293f;
+    font-size: 24px;
+  
+    /* léger relief interne */
+    box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.06);
+  }
+  
+  /* ───────── ESPACEMENT ─────────
+     On ménage un petit intervalle (≈ 20-22 px sur la maquette)
+     pour laisser apparaître la “pointe” blanche. */
+  .exp-item + .exp-item {
+    margin-top: 22px;
+  }
+  
+
+  
+  /* ===== LISTE BELL ===== */
+  .exp-bullets {
+    margin-left: 20px;
+    list-style-type: disc;
+    color: #374151;
+  }
+  
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 900px) {
+    .exp-illustration {
+      display: none;        /* on retire l’image décorative */
+    }
+  
+    .exp-content {
+      padding: 60px 20px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .exp-item {
+      flex-direction: column;
+    }
+    .hexagon {
+      margin-bottom: 8px;
+    }
+  }
+  

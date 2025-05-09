@@ -1,0 +1,59 @@
+/* ===== SECTION ===== */
+.projects-section {
+    padding: 80px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .projects-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #1d293f;
+    margin-bottom: 50px;
+  }
+  
+  /* ===== CARTE PROJET ===== */
+  .project-card {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 60px;
+    align-items: flex-start;
+  }
+  
+  .project-img {
+    width: 260px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 6px;
+    flex-shrink: 0;
+  }
+  
+  .project-content h3 {
+    font-size: 1.4rem;
+    color: #1d293f;
+    margin-bottom: 10px;
+  }
+  
+  .project-content p {
+    font-size: 1rem;
+    color: #374151;
+    margin-bottom: 12px;
+    line-height: 1.55;
+  }
+  
+  /* met en gras les techno encadrées de ** dans le JSX */
+  .project-content p strong {
+    font-weight: 600;
+  }
+  
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 768px) {
+    .project-card {
+      flex-direction: column;
+    }
+    .project-img {
+      width: 100%;
+      height: 200px;
+    }
+  }
+  
