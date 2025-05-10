@@ -1,13 +1,14 @@
+import './header.style.css';
 
 function Header() {
   return (
     <section id="header">
-      <h1>My Portfolio</h1>
+      <h1>Mon Portfolio</h1>
       <nav>
         <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">Profil</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#contact">Me joindre</a></li>
         </ul>
       </nav>
     </section>
