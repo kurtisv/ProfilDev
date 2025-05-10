@@ -86,7 +86,7 @@ button:hover, .btn:hover {
   background: linear-gradient(to bottom, #f0f8ff, #f9f9f9);
 }
 
-.skills, .projects, .experience, .contact {
+.skills, .projects, .experience, .contact, .formation {
   background-color: #fff;
   border-radius: 12px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.03);

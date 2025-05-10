@@ -1,0 +1,130 @@
+/* ————— SECTION GLOBALE ————— */
+.form-section {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .form-title {
+    font-size: 2.8rem;
+    color: #1d293f;
+    font-weight: 700;
+    margin-bottom: 50px;
+  }
+  
+  /* grille 2 colonnes */
+  .form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 60px;
+  }
+  
+  /* ————— COLONNES ————— */
+  .col-heading {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 32px;
+    color: #1d293f;
+  }
+  
+  /* ————— FR ISE (timeline) ————— */
+  .timeline {
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 34px;             /* aligne les icônes */
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: #cbd5e1;
+  }
+  
+  .timeline-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 50px;
+  }
+  
+  .tl-icon {
+    width: 38px;
+    height: 38px;
+    background: #d8e8e4;
+    border: 1px solid #c9dad7;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1d293f;
+    margin-right: 22px;
+    flex-shrink: 0;
+  }
+  
+  .tl-content h4 {
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+    color: #1d293f;
+  }
+  .tl-content p {
+    color: #374151;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  
+  /* ————— CARTES LANGUES ————— */
+  .lang-card {
+    background: #d8e8e4;
+    border: 1px solid #c9dad7;
+    border-radius: 6px;
+    padding: 24px 28px;
+    margin-bottom: 32px;
+  }
+  
+  .lang-card h4 {
+    font-size: 1.15rem;
+    margin-bottom: 12px;
+    color: #1d293f;
+  }
+  
+  .lang-card ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .lang-card li {
+    position: relative;
+    padding-left: 16px;
+    margin-bottom: 8px;
+    color: #374151;
+  }
+  
+  /* petit point devant chaque ligne */
+  .lang-card li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #1d293f;
+  }
+  
+  .lang-note {
+    margin-top: 16px;
+    font-size: 0.95rem;
+    color: #374151;
+    line-height: 1.55;
+  }
+  
+  /* ————— RESPONSIVE ————— */
+  @media (max-width: 900px) {
+    .form-grid {
+      grid-template-columns: 1fr;
+    }
+    .timeline::before {
+      left: 19px;
+    }
+  }
+  

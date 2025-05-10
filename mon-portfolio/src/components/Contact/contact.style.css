@@ -1,0 +1,96 @@
+/* ───── STRUCTURE ───── */
+.contact-section {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .contact-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #1d293f;
+    margin-bottom: 50px;
+  }
+  
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 60px;
+  }
+  
+  /* ───── MODALITÉS COLONNE ───── */
+  .modalite-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .modalite-item {
+    display: flex;
+    gap: 22px;
+    margin-bottom: 46px;
+  }
+  
+  .mod-icon {
+    width: 42px;
+    height: 42px;
+    background: #d8e8e4;
+    border: 1px solid #c9dad7;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1d293f;
+    flex-shrink: 0;
+  }
+  
+  .modalite-item h4 {
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+    color: #1d293f;
+  }
+  
+  .modalite-item p {
+    font-size: 1rem;
+    color: #374151;
+  }
+  
+  /* ───── PITCH COLONNE ───── */
+  .pitch-col p {
+    margin-bottom: 18px;
+    color: #374151;
+    line-height: 1.55;
+  }
+  
+  /* ───── BOUTONS DE CONTACT ───── */
+  .contact-methods {
+    margin-top: 26px;
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+  
+  .contact-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #007acc;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: background 0.25s;
+  }
+  
+  .contact-btn:hover {
+    background: #005f99;
+  }
+  
+  /* ───── RESPONSIVE ───── */
+  @media (max-width: 900px) {
+    .contact-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  

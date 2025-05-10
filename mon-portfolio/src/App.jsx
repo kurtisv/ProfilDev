@@ -5,6 +5,7 @@ import Skills from './components/Skills/Skill';
 import Projects from './components/Projects/projects';
 import Experience from './components/Experience/experience';
 import Contact from './components/Contact/contact';
+import FormationLangues from './components/FormationLangues/formationlangue';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Skills />
       <Experience />
       <Projects />
+      <FormationLangues />
       <Contact />
     </>
   );
